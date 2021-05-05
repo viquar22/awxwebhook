@@ -6,6 +6,10 @@
       -  ~/new/variable_file
     
     tasks:
-      - name: 'print my ip address'
+      - name: 'old ip address'
         debug:
-          msg: My IP is {{ my_ip }}
+          msg: My Old IP is {{ my_ip }}
+
+     - name: 'correct ip address'
+        debug:
+          msg: My New IP is {{ correct_ip }}
