@@ -1,0 +1,11 @@
+---
+  - name: 'Print IP'
+    hosts: localhost
+    
+    vars_files:
+      -  ~/new/variable_file
+    
+    tasks:
+      - name: 'print my ip address'
+        debug:
+          msg: My IP is {{ my_ip }}
